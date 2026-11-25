@@ -1,0 +1,159 @@
+/* Table specific styles inherited from AdminServices.css mostly */
+
+.new-enquiry-row td {
+  background: rgba(52, 152, 219, 0.03);
+}
+
+.new-enquiry-row .font-medium {
+  color: #2c3e50;
+}
+
+.customer-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.customer-phone {
+  font-size: 0.8rem;
+  color: var(--taupe);
+}
+
+/* Status Badges */
+.enq-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.enq-status-badge.new {
+  background: rgba(52, 152, 219, 0.15);
+  color: #2980b9;
+}
+
+.enq-status-badge.contacted {
+  background: rgba(243, 156, 18, 0.15);
+  color: #d35400;
+}
+
+.enq-status-badge.completed {
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+}
+
+.enq-status-badge.large {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Modal specific styling */
+.enquiry-modal {
+  max-width: 650px;
+}
+
+.enquiry-modal-body {
+  padding: 2rem;
+}
+
+.enq-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.enq-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.enq-detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.enq-detail-item .label {
+  font-size: 0.85rem;
+  color: var(--taupe);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.enq-detail-item .value {
+  font-size: 1rem;
+  color: var(--espresso);
+}
+
+.message-box {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  color: var(--espresso);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.enq-status-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(0,0,0,0.1);
+}
+
+.enq-status-section .label {
+  font-weight: 600;
+  color: var(--espresso);
+}
+
+.enq-modal-footer {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #fafafb;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.quick-actions-left {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.enq-action-btn {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.enq-action-btn.contacted-btn {
+  color: #d35400 !important;
+  border-color: rgba(243, 156, 18, 0.4) !important;
+}
+
+.enq-action-btn.contacted-btn:hover {
+  background: rgba(243, 156, 18, 0.1) !important;
+}
+
+.enq-action-btn.completed-btn {
+  color: #27ae60 !important;
+  border-color: rgba(39, 174, 96, 0.4) !important;
+}
+
+.enq-action-btn.completed-btn:hover {
+  background: rgba(39, 174, 96, 0.1) !important;
+}
+
+.delete-enq-btn {
+  color: #e74c3c !important;
+  border-color: transparent !important;
+}
+
+.delete-enq-btn:hover {
+  background: rgba(231, 76, 60, 0.1) !important;
+}

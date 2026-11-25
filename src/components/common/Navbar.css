@@ -1,0 +1,164 @@
+.navbar {
+  background-color: rgba(253, 251, 247, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(232, 217, 200, 0.5);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-image {
+  height: 97px;
+  width: auto;
+  display: block;
+}
+
+.navbar-logo span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: var(--taupe);
+  display: block;
+  margin-top: 0.25rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  color: var(--espresso);
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-menu a {
+  color: var(--espresso);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: var(--gold);
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.book-button {
+  background-color: var(--gold);
+  color: var(--espresso);
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: var(--espresso);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(198, 161, 110, 0.4);
+}
+
+.navbar-cta {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo-image {
+    height: 45px;
+  }
+
+  .navbar-logo span {
+    font-size: 0.6rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(248, 244, 238, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 20px rgba(43, 30, 27, 0.1);
+    display: none;
+    align-items: stretch;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    padding: 0.75rem 0;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-menu a::after {
+    display: none;
+  }
+
+  .navbar-cta {
+    display: block;
+  }
+
+  .book-button {
+    display: block;
+    text-align: center;
+  }
+}

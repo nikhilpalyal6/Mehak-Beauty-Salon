@@ -1,0 +1,46 @@
+/* Many styles are inherited from AdminServices.css globally since class names are reused, 
+   but specific styles for Courses are added here to ensure modularity. */
+
+.course-title-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.course-desc-preview {
+  font-size: 0.8rem;
+  color: var(--taupe);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.course-stats-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(241, 196, 15, 0.15);
+  color: #d35400;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.star-icon {
+  fill: currentColor;
+}
+
+.enrollment-text {
+  font-size: 0.8rem;
+  color: var(--taupe);
+  font-weight: 500;
+}

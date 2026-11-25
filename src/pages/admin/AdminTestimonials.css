@@ -1,0 +1,157 @@
+.admin-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.full-width-search {
+  width: 100% !important;
+  max-width: 600px;
+}
+
+.admin-review-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.admin-review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.admin-review-card.featured {
+  border: 1px solid rgba(198, 161, 110, 0.4);
+  background: linear-gradient(to bottom right, #ffffff, #fffcf8);
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reviewer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer-name {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--espresso);
+  font-weight: 700;
+}
+
+.review-service {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.review-rating {
+  display: flex;
+  gap: 0.15rem;
+  color: #f1c40f;
+}
+
+.review-card-body {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.review-card-body p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--taupe);
+  font-style: italic;
+}
+
+.review-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.status-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-badge.approved {
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+}
+
+.status-badge.pending {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+
+.status-badge.rejected {
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+}
+
+.moderation-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mod-btn {
+  border: none;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.mod-btn.approve {
+  color: #27ae60;
+}
+
+.mod-btn.approve:hover {
+  background: rgba(39, 174, 96, 0.1);
+}
+
+.mod-btn.reject {
+  color: #e74c3c;
+}
+
+.mod-btn.reject:hover {
+  background: rgba(231, 76, 60, 0.1);
+}
